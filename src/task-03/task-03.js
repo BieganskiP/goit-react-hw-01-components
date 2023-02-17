@@ -1,20 +1,22 @@
-import "./task-03.css";
+import css from "./task-03.module.css";
 
 export function FriendList({ friends }) {
   return (
-    <ul className="friend-list">
+    <ul className={css.friendList}>
       {friends.map((friend) => (
-        <li key={friend.id} className="item">
+        <li key={friend.id} className={css.item}>
           <span
-            className={friend.isOnline ? "status isOnline" : "status"}
+            className={
+              friend.isOnline ? css.status + " " + css.isOnline : css.status
+            }
           ></span>
           <img
-            className="avatar"
+            className={css.avatar}
             src={friend.avatar}
             alt="User avatar"
             width="48"
           />
-          <p className="name">{friend.name}</p>
+          <p className={css.name}>{friend.name}</p>
         </li>
       ))}
     </ul>
