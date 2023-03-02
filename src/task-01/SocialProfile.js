@@ -1,4 +1,4 @@
-import css from "./task-01.module.css";
+import css from "./SocialProfile.module.css";
 
 export function Profile({ username, tag, location, avatar, stats }) {
   return (

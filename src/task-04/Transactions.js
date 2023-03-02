@@ -1,4 +1,4 @@
-import css from "./task-04.module.css";
+import css from "./Transactions.module.css";
 
 export function TransactionHistory({ items }) {
   return (
